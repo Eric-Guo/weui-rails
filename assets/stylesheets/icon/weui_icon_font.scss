@@ -1,0 +1,73 @@
+﻿@import "weui_font";
+
+[class^="weui_icon_"]:before, [class*=" weui_icon_"]:before {
+    margin: 0;
+}
+
+.weui_icon_success:before {
+    font-size: 23px;
+    color: #09BB07;
+}
+
+.weui_icon_waiting:before {
+    font-size: 23px;
+    color: #10AEFF;
+}
+.weui_icon_warn:before {
+    font-size: 23px;
+    color: #F43530;
+}
+.weui_icon_info:before {
+    font-size: 23px;
+    color: #10AEFF;
+}
+
+.weui_icon_success_circle:before {
+    font-size: 23px;
+    color: #09BB07;
+}
+.weui_icon_success_no_circle:before {
+    font-size: 23px;
+    color: #09BB07;
+}
+.weui_icon_waiting_circle:before {
+    font-size: 23px;
+    color: #10AEFF;
+}
+.weui_icon_circle:before {
+    font-size: 23px;
+    color: #C9C9C9;
+}
+.weui_icon_download:before {
+    font-size: 23px;
+    color: #09BB07;
+}
+
+.weui_icon_info_circle:before {
+    font-size: 23px;
+    color: #09BB07;
+}
+
+.weui_icon_safe_success:before {
+    color: #09BB07;
+}
+
+.weui_icon_safe_warn:before {
+    color: #FFBE00;
+}
+
+.weui_icon_cancel:before {
+  font-size: 23px;
+  color: #F43530;
+}
+
+.weui_icon_msg:before {
+    font-size: 104px;
+    .weui_icon_warn & {
+        color: #F76260;
+    }
+}
+
+.weui_icon_safe:before {
+    font-size: 104px;
+}

@@ -1,0 +1,20 @@
+﻿// tapcolor
+@mixin setTapColor($c:rgba(0,0,0,0)) {
+    -webkit-tap-highlight-color: $c;
+}
+
+//user action
+@mixin no_select() {
+    user-select: none;
+}
+
+// opacity
+@mixin opacity($opacity) {
+    @if $opacity == 1 {
+      filter: "progid:DXImageTransform.Microsoft.Alpha(enabled=false)";
+    }
+    @else {
+      filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})";
+    }
+  opacity: $opacity;
+}
