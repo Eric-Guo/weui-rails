@@ -1,6 +1,12 @@
 Weui-Rails [![Gem Version][version-badge]][rubygems]
 ==========
 
+An UI library for WeChat, includes widgets/modules in mobile web app, sass is copy from [kevyu/weui-sass](https://github.com/kevyu/weui-sass), so do not open any Issues/PR here, instead, [open PR at weui-sass](https://github.com/kevyu/weui-sass/pulls).
+
+Weui-Rails version is same as [weui-sass version](https://github.com/kevyu/weui-sass/blob/master/package.json#L3).
+
+This gems can be used seperately, but 99% you will using with [wechat gems](https://github.com/Eric-Guo/wechat) at same time.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -58,6 +64,8 @@ app/controllers/wechats_controller.rb
 ```ruby
 class WechatsController < ActionController::Base
   layout 'wechat'
+  def buttons
+  end
 end
 ```
 
@@ -86,4 +94,9 @@ app/views/wechats/buttons.html.erb
 </div>
 ```
 
+## More example
+
+See [official readme](https://github.com/weui/weui#概述)
+
 [version-badge]: https://badge.fury.io/rb/weui-rails.svg
+[rubygems]: https://rubygems.org/gems/weui-rails
