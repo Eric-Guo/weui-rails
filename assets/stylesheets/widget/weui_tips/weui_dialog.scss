@@ -3,6 +3,7 @@
 $weuiDialogBackgroundColor: #FAFAFC;
 $weuiDialogLineColor: #D5D5D6;
 $weuiDialogLinkColor: #3CC51F;
+$weuiDialogLinkActiveBc: #EEEEEE;
 
 .weui_dialog {
     position: fixed;
@@ -17,7 +18,6 @@ $weuiDialogLinkColor: #3CC51F;
     border-radius: 3px;
     .weui_dialog_confirm & {
         .weui_dialog_hd {
-            text-align: left;
             padding: 1.2em 20px .5em;
         }
         .weui_dialog_bd {
@@ -53,8 +53,8 @@ $weuiDialogLinkColor: #3CC51F;
         color: $weuiDialogLinkColor;
         text-decoration: none;
         @include setTapColor();
-        &:active, &:hover {
-            text-decoration: none;
+        &:active {
+            background-color: $weuiDialogLinkActiveBc;
         }
     }
     &:after {
