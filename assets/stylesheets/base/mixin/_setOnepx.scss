@@ -6,6 +6,7 @@
     width: 100%;
     height: 1px;
     border-top: 1px solid $c;
+    color: $c;
     transform-origin: 0 0;
     transform: scaleY(0.5);
 }
@@ -18,6 +19,7 @@
     width: 100%;
     height: 1px;
     border-bottom: 1px solid $c;
+    color: $c;
     transform-origin: 0 100%;
     transform: scaleY(0.5);
 }
@@ -30,6 +32,7 @@
     width: 1px;
     height: 100%;
     border-left: 1px solid $c;
+    color: $c;
     transform-origin: 0 0;
     transform: scaleX(0.5);
 }
@@ -42,6 +45,7 @@
     width: 1px;
     height: 100%;
     border-right: 1px solid $c;
+    color: $c;
     transform-origin: 0 100%;
     transform: scaleX(0.5);
 }
