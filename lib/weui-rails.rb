@@ -1,3 +1,4 @@
+require 'autoprefixer-rails'
 require 'weui-rails/version'
 
 module Weui
