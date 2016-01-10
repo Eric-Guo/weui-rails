@@ -1,3 +1,4 @@
 <%= render partial: 'weui/message_box',
             locals: { title: title, description: description,
-                      icon_style: icon_style, button_text: button_text || '确定' } -%>
+                      icon_style: defined?(icon_style) ? icon_style : 'weui_icon_warn',
+                      button_text: defined?(button_text) ? button_text : '确定' } -%>
