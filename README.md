@@ -55,6 +55,7 @@ config/routes.rb
   resource :wechat, only: [:show, :create] do
     collection do
       get :message_box
+      get :direct_message_box
     end
   end
 ```
@@ -65,6 +66,10 @@ app/controllers/wechats_controller.rb
 class WechatsController < ActionController::Base
   layout 'wechat'
   def message_box
+  end 
+
+  def direct_message_box
+    render 'weui/message_box', locals: { title: 'Weui', description: 'directly render in controller' }  
   end
 end
 ```
