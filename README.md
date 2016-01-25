@@ -1,7 +1,9 @@
 Weui-Rails [![Gem Version][version-badge]][rubygems]
 ==========
 
-An UI library for WeChat, includes widgets/modules in mobile web app, sass is copy from [kevyu/weui-sass](https://github.com/kevyu/weui-sass), so do not open any Issues/PR here, instead, [open PR at weui-sass](https://github.com/kevyu/weui-sass/pulls).
+An UI library for WeChat, includes widgets/modules in mobile web app, sass is copy from [kevyu/weui-sass](https://github.com/kevyu/weui-sass), so do not open any Issues/PR relative with weui sass style, instead, [open PR at weui-sass](https://github.com/kevyu/weui-sass/pulls).
+
+Weui-Rails including some handy helper/view like `message_box`, for such feature, PR welcome.
 
 Weui-Rails version is same as [weui-sass version](https://github.com/kevyu/weui-sass/blob/master/package.json#L3).
 
