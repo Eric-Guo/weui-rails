@@ -16,7 +16,7 @@ $grayColor: #999999;
         }
     }
 
-    a&{
+    a & {
         color:#000000;
         @include setTapColor();
         &:active {
