@@ -78,6 +78,7 @@ $grayColor: #999999;
         }
         .weui_media_bd {
             flex: 1;
+            min-width: 0;
         }
     }
     &.weui_media_small_appmsg {
