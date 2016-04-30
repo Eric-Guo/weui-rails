@@ -1,8 +1,9 @@
 ﻿@import "../../../base/fn";
 
 .weui_label {
-  display:block;
-  width:3em;
+    display:block;
+    width:$weuiCellLabelWidth;
+    @include text_wrap();
 }
 .weui_input {
     width: 100%;
@@ -61,9 +62,6 @@
         .weui_icon_warn {
             display:inline-block;
         }
-    }
-    .weui_cell_hd {
-        padding-right: 1em;
     }
     .weui_cell_ft {
         font-size:0;
