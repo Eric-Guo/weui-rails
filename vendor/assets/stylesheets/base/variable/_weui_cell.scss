@@ -1,14 +1,14 @@
-﻿$weuiCellBg:#FFFFFF;
-$weuiCellBorderColor:#D9D9D9;
-$weuiCellGapV:10px;
-$weuiCellGapH:15px;
-$weuiCellInnerGapH:.35em;
-$weuiCellLabelWidth:105px;
+﻿$weuiCellBg:#FFFFFF !default;
+$weuiCellBorderColor:#D9D9D9 !default;
+$weuiCellGapV:10px !default;
+$weuiCellGapH:15px !default;
+$weuiCellInnerGapH:.35em !default;
+$weuiCellLabelWidth:105px !default;
 
 
-$weuiCellHeight: 44px;
-$weuiCellFontSize:17px;
-$weuiCellTipsFontSize:14px;
+$weuiCellHeight: 44px !default;
+$weuiCellFontSize:17px !default;
+$weuiCellTipsFontSize:14px !default;
 
-$weuiCellLineHeight: ($weuiCellHeight - 2 * $weuiCellGapV) / $weuiCellFontSize; // 高度为44px，减去上下padding的行高
-$weuiCellsMarginTop: 20 / ($weuiCellFontSize / ($weuiCellFontSize * 0 + 1)) + em;
+$weuiCellLineHeight: ($weuiCellHeight - 2 * $weuiCellGapV) / $weuiCellFontSize !default; // 高度为44px，减去上下padding的行高
+$weuiCellsMarginTop: 20 / ($weuiCellFontSize / ($weuiCellFontSize * 0 + 1)) + em !default;
