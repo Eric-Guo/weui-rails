@@ -1,11 +1,11 @@
 ﻿@import "../../../base/fn";
 
-.weui_label {
+.#{$weui_ns}label {
     display:block;
     width:$weuiCellLabelWidth;
     @include text_wrap();
 }
-.weui_input {
+.#{$weui_ns}input {
     width: 100%;
     border: 0;
     outline: 0;
@@ -22,7 +22,7 @@
         margin: 0;
     }
 }
-.weui_textarea {
+.#{$weui_ns}textarea {
     display: block;
     border: 0;
     resize: none;
@@ -33,15 +33,15 @@
     outline: 0;
 }
 
-.weui_textarea_counter {
+.#{$weui_ns}textarea_counter {
     color: $globalDescColor;
     text-align: right;
-    .weui_cell_warn & {
+    .#{$weui_ns}cell_warn & {
         color: $globalWarnColor;
     }
 }
 
-.weui_toptips {
+.#{$weui_ns}toptips {
     display:none;
     position: fixed;
     transform: translateZ(0);
@@ -52,21 +52,21 @@
     text-align: center;
     color: #FFF;
     z-index: 2;
-    &.weui_warn {
+    &.#{$weui_ns}warn {
         background-color: $globalWarnColor;
     }
 }
-.weui_cells_form {
-    .weui_cell_warn {
+.#{$weui_ns}cells_form {
+    .#{$weui_ns}cell_warn {
         color: $globalWarnColor;
-        .weui_icon_warn {
+        .#{$weui_ns}icon_warn {
             display:inline-block;
         }
     }
-    .weui_cell_ft {
+    .#{$weui_ns}cell_ft {
         font-size:0;
     }
-    .weui_icon_warn {
+    .#{$weui_ns}icon_warn {
       display:none;
     }
     input, textarea, label[for] {

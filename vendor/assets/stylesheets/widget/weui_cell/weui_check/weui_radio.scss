@@ -1,21 +1,21 @@
 ﻿@import "../../../base/fn";
 
 // method2 accessbility
-.weui_cells_radio{
-    .weui_cell_ft {
+.#{$weui_ns}cells_radio{
+    .#{$weui_ns}cell_ft {
         padding-left: $weuiCellInnerGapH;
     }
-    .weui_cell {
+    .#{$weui_ns}cell {
         &:active {
             background-color: #ECECEC;
         }
     }
 }
-.weui_check {
+.#{$weui_ns}check {
     // radio
-    .weui_cells_radio & {
+    .#{$weui_ns}cells_radio & {
         &:checked {
-            & + .weui_icon_checked {
+            & + .#{$weui_ns}icon_checked {
                 &:before {
                     display: block;
                     content: '\EA08';

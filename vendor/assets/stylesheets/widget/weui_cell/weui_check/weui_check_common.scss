@@ -1,10 +1,10 @@
 ﻿@import "../../../base/fn";
 
-.weui_check_label {
+.#{$weui_ns}check_label {
     @include setTapColor();
 }
 
-.weui_check{
+.#{$weui_ns}check{
     position: absolute;
     left: -9999em;
 }

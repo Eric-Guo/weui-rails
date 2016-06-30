@@ -1,6 +1,6 @@
 @import "../../base/fn";
 $bgColor: #ECECEC;
-.weui_actionsheet {
+.#{$weui_ns}actionsheet {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -12,14 +12,14 @@ $bgColor: #ECECEC;
   //slide up animation
   transition: transform .3s;
 }
-.weui_actionsheet_menu{
+.#{$weui_ns}actionsheet_menu{
   background-color: #FFFFFF;
 }
-.weui_actionsheet_action {
+.#{$weui_ns}actionsheet_action {
   margin-top: 6px;
   background-color: #FFFFFF;
 }
-.weui_actionsheet_cell {
+.#{$weui_ns}actionsheet_cell {
   position: relative;
   padding: 10px 0;
   text-align: center;
@@ -38,6 +38,6 @@ $bgColor: #ECECEC;
 }
 
 //actionSheet aniamtion
-.weui_actionsheet_toggle{
+.#{$weui_ns}actionsheet_toggle{
   transform: translate(0, 0);
 }

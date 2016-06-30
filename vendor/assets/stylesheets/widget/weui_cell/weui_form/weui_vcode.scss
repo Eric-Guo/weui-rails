@@ -1,10 +1,10 @@
 ﻿@import "../../../base/fn";
 
-.weui_vcode {
+.#{$weui_ns}vcode {
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 0;
-    .weui_cell_ft {
+    .#{$weui_ns}cell_ft {
         img {
             margin-left: 5px;
             height: $weuiCellHeight;

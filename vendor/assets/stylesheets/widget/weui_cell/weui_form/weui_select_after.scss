@@ -1,9 +1,9 @@
 ﻿@import "../../../base/fn";
 @import "weui_select";
 
-.weui_select_after {
+.#{$weui_ns}select_after {
     padding-left:$weuiCellGapH;
-    .weui_select {
+    .#{$weui_ns}select {
         padding-left:0;
     }
 }

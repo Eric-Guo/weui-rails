@@ -1,6 +1,6 @@
 ﻿@import "../../base/fn";
 
-.weui_cell {
+.#{$weui_ns}cell {
     // onepx
     position: relative;
     &:before {
@@ -13,7 +13,7 @@
         }
     }
 }
-.weui_cells {
+.#{$weui_ns}cells {
     margin-top: $weuiCellsMarginTop;
     background-color: $weuiCellBg;
     line-height: $weuiCellLineHeight;
@@ -32,19 +32,20 @@
     }
 }
 
-.weui_cells_title {
+.#{$weui_ns}cells_title {
     margin-top: .77em;
+    margin-bottom: .3em;
     padding-left: $weuiCellGapH;
     padding-right: $weuiCellGapH;
     color: $globalTextColor;
     font-size: $weuiCellTipsFontSize;
 
-    & + .weui_cells{
+    & + .#{$weui_ns}cells{
         margin-top: 0;
     }
 }
 
-.weui_cells_tips{
+.#{$weui_ns}cells_tips{
     margin-top: .3em; // 8px - 行高
     color: $globalTextColor;
     padding-left: 15px;
@@ -52,18 +53,18 @@
     font-size: $weuiCellTipsFontSize;
 }
 
-.weui_cell {
+.#{$weui_ns}cell {
     padding: $weuiCellGapV $weuiCellGapH;
     position: relative; //这个是为了兼容cells容器onepx方案被before挡住而做的
     display: flex;
     align-items: center;
 }
 
-.weui_cell_ft {
+.#{$weui_ns}cell_ft {
     text-align:right;
     color: $globalTextColor;
 }
 
-.weui_cell_primary {
+.#{$weui_ns}cell_primary {
     flex: 1;
 }

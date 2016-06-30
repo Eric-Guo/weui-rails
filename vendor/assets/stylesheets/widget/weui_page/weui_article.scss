@@ -1,6 +1,6 @@
 ﻿@import "../../base/fn";
 
-.weui_article {
+.#{$weui_ns}article {
     padding: 20px 15px;
     font-size: 15px;
     section {

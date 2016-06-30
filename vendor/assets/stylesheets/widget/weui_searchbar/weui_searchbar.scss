@@ -1,5 +1,5 @@
 @import "../../base/fn";
-.weui_search_bar {
+.#{$weui_ns}search_bar {
     position: relative;
     padding: 8px 10px;
     display: flex;
@@ -12,16 +12,16 @@
     &:after {
         @include setBottomLine();
     }
-    &.weui_search_focusing {
-        .weui_search_cancel {
+    &.#{$weui_ns}search_focusing {
+        .#{$weui_ns}search_cancel {
             display: block;
         }
-        .weui_search_text {
+        .#{$weui_ns}search_text {
             display: none;
         }
     }
 }
-.weui_search_outer {
+.#{$weui_ns}search_outer {
     position: relative;
     flex: auto;
     background-color: #EFEFF4;
@@ -40,7 +40,7 @@
         background: #FFFFFF;
     }
 }
-.weui_search_inner {
+.#{$weui_ns}search_inner {
     position: relative;
     padding-left: 30px;
     padding-right: 30px;
@@ -48,26 +48,26 @@
     width: 100%;
     box-sizing: border-box;
     z-index: 1;
-    .weui_search_input {
+    .#{$weui_ns}search_input {
         padding: 4px 0;
         width: 100%;
-        height: 20/14em;
+        height: 20/14*1em;
         border: 0;
         font-size: 14px;
-        line-height: 20/14em;
+        line-height: 20/14*1em;
         box-sizing: content-box;
         background: transparent;
         &:focus {
             outline: none;
         }
     }
-    .weui_icon_search {
+    .#{$weui_ns}icon_search {
         position: absolute;
         left: 10px;
         top: -2px;
         line-height: 28px;
     }
-    .weui_icon_clear {
+    .#{$weui_ns}icon_clear {
         position: absolute;
         top: -2px;
         right: 0;
@@ -75,7 +75,7 @@
         line-height: 28px;
     }
 }
-.weui_search_text {
+.#{$weui_ns}search_text {
     position: absolute;
     top: 1px;
     right: 1px;
@@ -91,17 +91,18 @@
         font-size: 14px;
         vertical-align: middle;
     }
-    .weui_icon_search {
+    .#{$weui_ns}icon_search {
         margin-right: 5px;
     }
 }
-.weui_search_cancel {
+.#{$weui_ns}search_cancel {
     display: none;
     margin-left: 10px;
     line-height: 28px;
+    white-space: nowrap;
     color: #09BB07;
 }
-.weui_search_input:not(:valid) ~ .weui_icon_clear {
+.#{$weui_ns}search_input:not(:valid) ~ .#{$weui_ns}icon_clear {
     display: none;
 }
 

@@ -3,7 +3,7 @@
 $lineColor: #E5E5E5;
 $grayColor: #999999;
 
-.weui_media_box {
+.#{$weui_ns}media_box {
     padding: 15px;
     position: relative;
     &:before {
@@ -15,34 +15,25 @@ $grayColor: #999999;
             display: none
         }
     }
-
-    a & {
-        color:#000000;
-        @include setTapColor();
-        &:active {
-            background-color: #ECECEC;
-        }
-    }
-
-    .weui_media_title {
+    .#{$weui_ns}media_title {
         font-weight: 400;
         font-size: 17px;
         @include ellipsis();
         word-wrap: break-word;
         word-break: break-all;
     }
-    .weui_media_desc {
+    .#{$weui_ns}media_desc {
         color: $grayColor;
         font-size: 13px;
         line-height: 1.2;
         @include ellipsisLn(2);
     }
 
-    &.weui_media_text {
-        .weui_media_title {
+    &.#{$weui_ns}media_text {
+        .#{$weui_ns}media_title {
             margin-bottom: 8px;
         }
-        .weui_media_info {
+        .#{$weui_ns}media_info {
             margin-top: 15px;
             padding-bottom: 5px;
             font-size: 13px;
@@ -51,45 +42,52 @@ $grayColor: #999999;
             list-style: none;
             overflow: hidden;
         }
-        .weui_media_info_meta {
+        .#{$weui_ns}media_info_meta {
             float: left;
             padding-right: 1em;
-            &.weui_media_info_meta_extra {
+            &.#{$weui_ns}media_info_meta_extra {
                 padding-left: 1em;
                 border-left: 1px solid #CECECE;
             }
         }
-
     }
-    &.weui_media_appmsg {
+    &.#{$weui_ns}media_appmsg {
         display: flex;
         align-items: center;
-        .weui_media_hd {
+        .#{$weui_ns}media_hd {
             margin-right: .8em;
             width: 60px;
             height: 60px;
             line-height: 60px;
             text-align: center;
         }
-        .weui_media_appmsg_thumb {
+        .#{$weui_ns}media_appmsg_thumb {
             width: 100%;
             max-height: 100%;
             vertical-align: middle;
         }
-        .weui_media_bd {
+        .#{$weui_ns}media_bd {
             flex: 1;
             min-width: 0;
         }
     }
-    &.weui_media_small_appmsg {
+    &.#{$weui_ns}media_small_appmsg {
         padding: 0;
-        .weui_cells {
+        .#{$weui_ns}cells {
             margin-top: 0;
             &:before {
                 display: none;
             }
         }
-        .weui_cells_access {
+        .#{$weui_ns}cells_access {
         }
+    }
+}
+
+a.#{$weui_ns}media_box {
+    color:#000000;
+    @include setTapColor();
+    &:active {
+        background-color: #ECECEC;
     }
 }

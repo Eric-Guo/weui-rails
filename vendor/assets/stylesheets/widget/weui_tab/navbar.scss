@@ -1,6 +1,6 @@
 @import "../../base/fn";
 
-.weui_navbar {
+.#{$weui_ns}navbar {
     display: flex;
     position: absolute;
     z-index: 1;
@@ -12,13 +12,13 @@
         @include setBottomLine($globalBorderColor);
     }
 
-    & + .weui_tab_bd {
+    & + .#{$weui_ns}tab_bd {
         padding-top: 50px;
         padding-bottom: 0;
     }
 }
 
-.weui_navbar_item {
+.#{$weui_ns}navbar_item {
     position: relative;
     display: block;
     flex: 1;
@@ -31,7 +31,7 @@
         background-color: #ededed;
     }
 
-    &.weui_bar_item_on {
+    &.#{$weui_ns}bar_item_on {
         background-color: #eaeaea;
     }
 

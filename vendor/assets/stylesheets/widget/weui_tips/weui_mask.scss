@@ -1,6 +1,6 @@
 ﻿@import "../../base/fn";
 
-.weui_mask {
+.#{$weui_ns}mask {
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -10,7 +10,7 @@
     background: rgba(0, 0, 0, .6);
 }
 
-.weui_mask_transparent {
+.#{$weui_ns}mask_transparent {
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -19,7 +19,7 @@
     left: 0;
 }
 
-.weui_mask_transition{
+.#{$weui_ns}mask_transition{
     display: none;
     position: fixed;
     z-index: 1;
@@ -30,6 +30,6 @@
     background: rgba(0,0,0,0);
     transition:background .3s;
 }
-.weui_fade_toggle{
+.#{$weui_ns}fade_toggle{
     background: rgba(0,0,0,.6);
 }

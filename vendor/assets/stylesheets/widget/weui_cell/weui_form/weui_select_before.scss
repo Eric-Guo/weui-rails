@@ -1,13 +1,13 @@
 ﻿@import "../../../base/fn";
 @import "weui_select";
 
-.weui_select_before {
+.#{$weui_ns}select_before {
     padding-right: $weuiCellGapH;
-    .weui_select {
+    .#{$weui_ns}select {
         width:$weuiCellLabelWidth;
         box-sizing: border-box;
     }
-    .weui_cell_hd {
+    .#{$weui_ns}cell_hd {
         position: relative;
         &:after {
             @include setRightLine($weuiCellBorderColor);
@@ -22,7 +22,7 @@
             margin-top: -3px;
         }
     }
-    .weui_cell_bd {
+    .#{$weui_ns}cell_bd {
         padding-left: $weuiCellGapH;
         &:after{
             display:none;

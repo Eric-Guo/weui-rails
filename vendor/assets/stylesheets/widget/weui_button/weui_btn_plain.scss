@@ -1,6 +1,6 @@
 ﻿@import "../../base/fn";
 
-.weui_btn_plain_primary {
+.#{$weui_ns}btn_plain_primary {
     color: $weuiBtnPrimaryBg;
     border: 1px solid $weuiBtnPrimaryBg;
     &:active {
@@ -11,12 +11,12 @@
     }
 }
 
-button.weui_btn_plain_primary, input.weui_btn_plain_primary {
+button.#{$weui_ns}btn_plain_primary, input.#{$weui_ns}btn_plain_primary {
     border-width: 1px;
     background-color: transparent;
 }
 
-.weui_btn_plain_default {
+.#{$weui_ns}btn_plain_default {
     color: #5A5A5A;
     border: 1px solid #5A5A5A;
     &:after {
@@ -24,7 +24,7 @@ button.weui_btn_plain_primary, input.weui_btn_plain_primary {
     }
 }
 
-button.weui_btn_plain_default, input.weui_btn_plain_default {
+button.#{$weui_ns}btn_plain_default, input.#{$weui_ns}btn_plain_default {
     border-width: 1px;
     background-color: transparent;
 }

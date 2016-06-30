@@ -1,6 +1,6 @@
 ﻿@import "../../base/fn";
 
-.weui_btn {
+.#{$weui_ns}btn {
     position: relative;
     display: block;
     margin-left: auto;
@@ -30,7 +30,7 @@
         border-radius: $weuiBtnBorderRadius*2;
     }
 
-    &.weui_btn_inline {
+    &.#{$weui_ns}btn_inline {
         display: inline-block;
     }
 }

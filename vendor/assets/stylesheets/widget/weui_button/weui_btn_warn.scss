@@ -1,11 +1,11 @@
 ﻿@import "../../base/fn";
 
-.weui_btn_warn {
+.#{$weui_ns}btn_warn {
     background-color: $weuiBtnWarnBg;
-    &:not(.weui_btn_disabled):visited {
+    &:not(.#{$weui_ns}btn_disabled):visited {
         color: $weuiBtnFontColor;
     }
-    &:not(.weui_btn_disabled):active {
+    &:not(.#{$weui_ns}btn_disabled):active {
         color: $weuiBtnActiveFontColor;
         background-color: $weuiBtnWarnActiveBg;
     }

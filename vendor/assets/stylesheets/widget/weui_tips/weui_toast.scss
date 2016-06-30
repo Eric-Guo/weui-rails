@@ -1,6 +1,6 @@
 ﻿@import "../../base/fn";
 
-.weui_toast {
+.#{$weui_ns}toast {
     position: fixed;
     z-index: 3;
     width: 7.6em;
@@ -14,7 +14,7 @@
     color: #FFFFFF;
 }
 
-.weui_icon_toast {
+.#{$weui_ns}icon_toast {
     margin: 22px 0 0;
     display: block;
     &:before {
@@ -24,19 +24,19 @@
     }
 }
 
-.weui_toast_content {
+.#{$weui_ns}toast_content {
     margin: 0 0 15px;
 }
 
 // loading toast
-.weui_loading_toast {
-    .weui_toast_content {
+.#{$weui_ns}loading_toast {
+    .#{$weui_ns}toast_content {
         margin-top: 64%;
         font-size: 14px;
     }
 }
 
-.weui_loading {
+.#{$weui_ns}loading {
     position: absolute;
     width: 0px;
     z-index: 2000000000;
@@ -44,7 +44,7 @@
     top: 38%;
 }
 
-.weui_loading_leaf {
+.#{$weui_ns}loading_leaf {
     position: absolute;
     top: -1px;
     @include opacity(0.25);
