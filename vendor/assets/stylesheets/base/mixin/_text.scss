@@ -6,7 +6,7 @@
     word-wrap: normal;
 }
 
-@mixin  ellipsisLn($line) {
+@mixin ellipsisLn($line) {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
