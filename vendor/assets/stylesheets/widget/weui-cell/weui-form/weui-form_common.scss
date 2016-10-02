@@ -1,0 +1,75 @@
+﻿@import "../../../base/fn";
+
+.#{$weui_ns}label{
+  display:block;
+  width:$weuiCellLabelWidth;
+  @include text_wrap();
+}
+.#{$weui_ns}input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    height: $weuiCellLineHeight + em;
+    line-height: $weuiCellLineHeight;
+
+    // hides the spin-button
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+.#{$weui_ns}textarea {
+    display: block;
+    border: 0;
+    resize: none;
+    width: 100%;
+    color: inherit;
+    font-size: 1em;
+    line-height: inherit;
+    outline: 0;
+}
+
+.#{$weui_ns}textarea-counter{
+    color: $weuiTextColorTips;
+    text-align: right;
+    .#{$weui_ns}cell_warn &{
+        color: $weuiTextColorWarn;
+    }
+}
+
+.#{$weui_ns}toptips {
+    display:none;
+    position: fixed;
+    -webkit-transform: translateZ(0);
+    top: 0;
+    left: 0;
+    right: 0;
+    padding:5px;
+    font-size:14px;
+    text-align: center;
+    color: #FFF;
+    z-index: 5000;
+    @include text_wrap();
+}
+.#{$weui_ns}toptips_warn {
+    background-color: $weuiTextColorWarn;
+}
+.#{$weui_ns}cells_form {
+    .#{$weui_ns}cell__ft{
+        font-size:0;
+    }
+    .weui-icon-warn{
+        display:none;
+    }
+    input, textarea, label[for]{
+        @include setTapColor();
+    }
+}
+.#{$weui_ns}cell_warn{
+    color:$weuiTextColorWarn;
+    .weui-icon-warn{display:inline-block;}
+}

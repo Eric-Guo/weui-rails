@@ -1,35 +1,9 @@
 ﻿// namespace
-$weui_ns: 'weui_' !default;
+$weui_ns: 'weui-' !default;
 
-// font family
-$sansFont:"Helvetica Neue",Helvetica,Arial,sans-serif !default;
-$serifFont:Georgia, "Times New Roman",Times,serif !default;
-$wpFont:"Microsoft YaHei",sans-serif !default;
-$bizFont:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif !default;
-$globalFont:$sansFont !default;
-$globalFontSize:14px !default;
+// font
+$weuiFontEN:-apple-system-font,"Helvetica Neue";
+$weuiFontCN:"PingFang SC","Hiragino Sans GB","Microsoft YaHei";
+$weuiFontSans:sans-serif;
+$weuiFontDefault:$weuiFontEN,$weuiFontSans;
 
-// font color
-$globalLinkColor: #61749B !default;
-$globalDescColor: #B2B2B2 !default;
-$globalWarnColor: #E64340 !default;
-$globalNickNameColor: #576B95 !default;
-$globalTextColor: #888 !default;
-$globalTitleColor: #000 !default;
-
-//border
-$globalBorderColor: #BCBAB6 !default;
-
-//arrow
-$globalArrowColor: #C7C7CC !default;
-
-//component
-$itemActiveColor: #E4E4E4 !default;
-
-//page
-$pageDefaultBackgroundColor:#EFEFF4 !default;
-
-// gap
-$gap5:5px !default;
-$gap10:10px !default;
-$gap15:15px !default;

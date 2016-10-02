@@ -1,0 +1,20 @@
+@import "../../base/fn";
+@import "tabbar";
+@import "navbar";
+
+.#{$weui_ns}tab {
+    position: relative;
+    height: 100%;
+}
+
+.#{$weui_ns}tab__panel, .#{$weui_ns}tab__bd {
+    box-sizing: border-box;
+    height: 100%;
+    padding-bottom: 55px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.#{$weui_ns}tab__bd-item {
+    display: none;
+}

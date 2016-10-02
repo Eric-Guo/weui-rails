@@ -1,0 +1,60 @@
+﻿@import "../../base/fn";
+@import "weui-btn_global";
+@import "weui-btn_default";
+@import "weui-btn_primary";
+@import "weui-btn_warn";
+@import "weui-btn_disabled";
+@import "weui-btn_plain";
+
+button, input {
+    &.#{$weui_ns}btn {
+        width: 100%;
+        border-width: 0;
+        outline: 0;
+        -webkit-appearance: none;
+        &:focus {
+            outline: 0;
+        }
+    }
+    &.#{$weui_ns}btn_inline,&.#{$weui_ns}btn_mini {
+        width: auto;
+    }
+    &.#{$weui_ns}btn_plain-primary,&.#{$weui_ns}btn_plain-default{
+        border-width: 1px;
+        background-color: transparent;
+    }
+}
+
+.#{$weui_ns}btn_mini {
+    display: inline-block;
+    padding: 0 1.32em;
+    line-height: $weuiBtnMiniHeight;
+    font-size: $weuiBtnMiniFontSize;
+}
+
+
+/*gap between btn*/
+.#{$weui_ns}btn + .#{$weui_ns}btn {
+    margin-top: $weuiBtnDefaultGap;
+}
+
+.#{$weui_ns}btn.#{$weui_ns}btn_inline + .#{$weui_ns}btn.#{$weui_ns}btn_inline {
+    margin-top: auto;
+    margin-left: $weuiBtnDefaultGap;
+}
+
+.#{$weui_ns}btn-area {
+    margin: $weuiCellsMarginTop $weuiBtnDefaultGap .3em;
+}
+.#{$weui_ns}btn-area_inline {
+    display: flex;
+    .#{$weui_ns}btn {
+        margin-top: auto;
+        margin-right: $weuiBtnDefaultGap;
+        width: 100%;
+        flex: 1;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

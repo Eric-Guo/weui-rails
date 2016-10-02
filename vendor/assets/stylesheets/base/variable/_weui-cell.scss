@@ -1,0 +1,22 @@
+﻿$weuiCellBg:#FFFFFF !default;
+$weuiCellBorderColor:#D9D9D9 !default;
+$weuiCellGapV:10px !default;
+$weuiCellGapH:15px !default;
+$weuiCellInnerGapH:.35em !default;
+$weuiCellHeight: 44px !default;
+$weuiCellFontSize:17px !default;
+$weuiCellTipsFontSize:14px !default;
+$weuiCellLabelWidth:105px !default;
+
+$weuiCellLineHeight: ($weuiCellHeight - 2 * $weuiCellGapV) / $weuiCellFontSize !default; // 高度为44px，减去上下padding的行高
+$weuiCellsMarginTop: 20 / ($weuiCellFontSize / ($weuiCellFontSize * 0 + 1)) + em !default;
+
+// weui switch
+$weuiSwitchHeight: 32px !default;
+
+// weui uploader
+$weuiUploaderBorderColor:#D9D9D9 !default;
+$weuiUploaderActiveBorderColor:#999999 !default;
+$weuiUploaderFileSpacing: 9px !default;
+$weuiUploaderSize: 79px !default;
+$weuiUploaderBorderWidth: 1px !default;

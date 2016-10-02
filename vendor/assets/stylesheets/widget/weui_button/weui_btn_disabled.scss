@@ -1,9 +1,0 @@
-﻿@import "../../base/fn";
-
-.#{$weui_ns}btn_disabled {
-    color: $weuiBtnDisabledFontColor;
-
-    &.#{$weui_ns}btn_default {
-        color: $weuiBtnDefaultDisabledFontColor;
-    }
-}

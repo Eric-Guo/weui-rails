@@ -1,0 +1,24 @@
+@import "../../base/fn";
+
+.#{$weui_ns}progress {
+    display: flex;
+    align-items: center;
+}
+
+.#{$weui_ns}progress__bar {
+    background-color: $weuiProgressBg;
+    height: $weuiProgressHeight;
+    flex: 1;
+}
+
+.#{$weui_ns}progress__inner-bar {
+    width: 0;
+    height: 100%;
+    background-color: $weuiProgressColor;
+}
+
+.#{$weui_ns}progress__opr {
+    display: block;
+    margin-left: 15px;
+    font-size: 0;
+}

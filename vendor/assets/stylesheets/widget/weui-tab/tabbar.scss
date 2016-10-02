@@ -1,0 +1,57 @@
+@import "../../base/fn";
+
+.#{$weui_ns}tabbar {
+    display: flex;
+    position: absolute;
+    z-index: 500;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f7fa;
+
+    &:before {
+        @include setTopLine(#C0BFC4);
+    }
+}
+
+.#{$weui_ns}tabbar__item {
+    display: block;
+    flex: 1;
+    padding: 7px 0 0;
+    font-size: 0;
+    color: $weuiTextColorGray;
+    text-align: center;
+    @include setTapColor();
+
+    &.#{$weui_ns}bar__item_on {
+        .#{$weui_ns}tabbar__icon, .#{$weui_ns}tabbar__icon > i, .#{$weui_ns}tabbar__label {
+            color: #09BB07;
+        }
+    }
+}
+
+.#{$weui_ns}tabbar__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    i &, > i {
+        font-size: 24px;
+        color: $weuiTextColorGray;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    & + .#{$weui_ns}tabbar__label {
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+}
+
+.#{$weui_ns}tabbar__label {
+    text-align: center;
+    color: $weuiTextColorGray;
+    font-size: 12px;
+}
