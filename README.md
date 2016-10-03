@@ -9,6 +9,34 @@ Weui-Rails version is same as [weui-sass version](https://github.com/kevyu/weui-
 
 This gems can be used seperately, but 99% you will using with [wechat gems](https://github.com/Eric-Guo/wechat) at same time.
 
+## Migration from 0.4.x to 1.0.x notes
+
+Due to weui make a huge rename when go 1.0 version, so a lot of style name changed, here is some incomplete list to help you upgrade easier.
+
+| Previus style | 1.0 style |
+|---------------|-----------|
+| weui_cells | weui-cells |
+| weui_cell | weui-cell |
+| weui_cell_hd | weui-cell__hd |
+| weui_cell_bd | weui-cell__bd |
+| weui_cell_ft | weui-cell__ft |
+| weui_cell_primary | weui-cell_primary |
+| weui_input | weui-input |
+| weui_cells_title | weui-cells_title |
+| weui_cells_access | weui-cell_access * |
+| weui_toptips | weui-toptips |
+| weui_warn | weui-toptips_warn |
+| weui_cells_form | weui-cells_form |
+| weui_label | weui-label |
+| weui_cell_select | weui-cell_select |
+| weui_select_after | weui-cell_select-after |
+| weui_select_before | weui-cell_select-before |
+| weui_btn | weui-btn |
+| weui_btn_primary | weui-btn_primary |
+| weui_textarea | weui-textarea |
+
+* weui-cell_access move from weui-cells to weui-cell.
+
 ## Installation
 
 Add this line to your application's Gemfile:
