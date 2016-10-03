@@ -79,7 +79,7 @@ end
 app/views/wechats/message_box.html.erb
 
 ```erb
-<%= weui_message_box 'Title', 'Description', 'weui_icon_warn' -%>
+<%= weui_message_box 'Title', 'Description', 'weui-icon-warn' -%>
 ```
 
 ## More example
