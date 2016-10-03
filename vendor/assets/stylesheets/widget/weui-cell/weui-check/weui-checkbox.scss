@@ -1,7 +1,7 @@
 ﻿@import "../../../base/fn";
 
 .#{$weui_ns}cells_checkbox {
-    .#{$weui_ns}cell_hd {
+    .#{$weui_ns}cell__hd {
         padding-right: $weuiCellInnerGapH;
     }
     .#{$weui_ns}cell {
@@ -9,7 +9,7 @@
             background-color: #ECECEC;
         }
     }
-    .#{$weui_ns}icon_checked {
+    .weui-icon-checked {
         &:before {
             content: '\EA01';
             color: #C9C9C9;
@@ -24,7 +24,7 @@
     // checkbox
     .#{$weui_ns}cells_checkbox & {
         &:checked {
-            & + .#{$weui_ns}icon_checked {
+            & + .weui-icon-checked {
                 &:before {
                     content: '\EA06';
                     color: #09BB07;

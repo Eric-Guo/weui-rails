@@ -2,7 +2,7 @@
 
 // method2 accessbility
 .#{$weui_ns}cells_radio{
-    .#{$weui_ns}cell_ft {
+    .#{$weui_ns}cell__ft {
         padding-left: $weuiCellInnerGapH;
     }
     .#{$weui_ns}cell {
@@ -15,7 +15,7 @@
     // radio
     .#{$weui_ns}cells_radio & {
         &:checked {
-            & + .#{$weui_ns}icon_checked {
+            & + .weui-icon-checked {
                 &:before {
                     display: block;
                     content: '\EA08';
