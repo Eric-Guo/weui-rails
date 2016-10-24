@@ -33,7 +33,13 @@ Due to weui make a huge rename when go 1.0 version, so a lot of style name chang
 | weui_select_before | weui-cell_select-before |
 | weui_btn | weui-btn |
 | weui_btn_primary | weui-btn_primary |
+| weui_btn_plain_default | weui-btn_plain-default |
 | weui_textarea | weui-textarea |
+| weui_msg | weui-msg |
+| weui_msg_title | weui-msg__title |
+| weui_text_area | weui-msg__text-area |
+| weui_opr_area | weui-msg__opr-area |
+| weui_btn_area | weui-btn-area |
 
 * weui-cell_access move from weui-cells to weui-cell.
 
