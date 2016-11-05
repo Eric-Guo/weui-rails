@@ -5,11 +5,6 @@
     .#{$weui_ns}cell__ft {
         padding-left: $weuiCellInnerGapH;
     }
-    .#{$weui_ns}cell {
-        &:active {
-            background-color: #ECECEC;
-        }
-    }
 }
 .#{$weui_ns}check {
     // radio

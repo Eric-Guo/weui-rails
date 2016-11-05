@@ -4,11 +4,6 @@
     .#{$weui_ns}cell__hd {
         padding-right: $weuiCellInnerGapH;
     }
-    .#{$weui_ns}cell {
-        &:active {
-            background-color: #ECECEC;
-        }
-    }
     .weui-icon-checked {
         &:before {
             content: '\EA01';

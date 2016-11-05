@@ -2,6 +2,9 @@
 
 .#{$weui_ns}check_label {
     @include setTapColor();
+    &:active {
+        background-color: #ECECEC;
+    }
 }
 
 .#{$weui_ns}check{
