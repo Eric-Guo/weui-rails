@@ -6,7 +6,7 @@
     z-index: 500;
     top: 0;
     width: 100%;
-    background-color: #fafafa;
+    background-color: #FAFAFA;
 
     &:after {
         @include setBottomLine(#CCCCCC);
@@ -28,11 +28,11 @@
     @include setTapColor();
 
     &:active {
-        background-color: #ededed;
+        background-color: #EDEDED;
     }
 
     &.#{$weui_ns}bar__item_on {
-        background-color: #eaeaea;
+        background-color: #EAEAEA;
     }
 
     &:after {
