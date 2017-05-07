@@ -13,12 +13,31 @@ $weuiActionSheetAndroidBorderRadius: 2px;
     //slide up animation
     transition: transform .3s;
 }
+.#{$weui_ns}actionsheet__title {
+    position: relative;
+    height: 65px;
+    padding: 0 20px;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    background: #FCFCFD;
+    &:before {
+        @include setBottomLine($weuiCellBorderColor);
+    }
+    .weui-actionsheet__title-text {
+        @include ellipsisLn(2);
+    }
+}
 .#{$weui_ns}actionsheet__menu{
-    background-color: #FFFFFF;
+    background-color: #FCFCFD;
 }
 .#{$weui_ns}actionsheet__action {
     margin-top: 6px;
-    background-color: #FFFFFF;
+    background-color: #FCFCFD;
 }
 .#{$weui_ns}actionsheet__cell {
     position: relative;

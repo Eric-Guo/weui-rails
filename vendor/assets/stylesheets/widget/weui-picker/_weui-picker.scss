@@ -15,10 +15,11 @@ $pickerItemHeight: 34px;
 
 .#{$weui_ns}picker__hd {
     display: flex;
-    padding: 10px 15px;
-    background-color: #fbf9fe;
+    padding: 9px 15px;
+    background-color: #fff;
     position: relative;
     text-align: center;
+    font-size: 17px;
     &:after {
         @include setBottomLine($weuiLineColorLight);
     }
