@@ -63,13 +63,7 @@
     color: $weuiDialogLinkColor;
     text-align: center;
     @include setTapColor();
-    button & {
-        background-color: transparent;
-        border: 0;
-        outline: 0;
-        line-height: inherit;
-        font-size: inherit;
-    }
+
     &:active {
         background-color: $weuiDialogLinkActiveBc;
     }
@@ -81,6 +75,13 @@
             display: none;
         }
     }
+}
+button.#{$weui_ns}form-preview__btn {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    line-height: inherit;
+    font-size: inherit;
 }
 .#{$weui_ns}form-preview__btn_default {
     color: $weuiTextColorGray;
