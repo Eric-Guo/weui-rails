@@ -19,10 +19,14 @@
     margin-bottom: $weuiMsgTitleGap;
     font-weight: 400;
     font-size: 20px;
+    word-wrap:break-word;
+    word-break:break-all;
 }
 .#{$weui_ns}msg__desc {
     font-size: 14px;
     color: $weuiTextColorGray;
+    word-wrap:break-word;
+    word-break:break-all;
 }
 .#{$weui_ns}msg__opr-area {
     margin-bottom: $weuiMsgOprGap;
@@ -41,5 +45,10 @@
         bottom: 0;
         width: 100%;
         text-align: center;
+    }
+}
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3){ // iPhoneX
+    .weui-msg__extra-area {
+        margin-bottom: $weuiMsgExtraAreaGap + 34;
     }
 }

@@ -9,6 +9,9 @@
 .#{$weui_ns}check {
     // radio
     .#{$weui_ns}cells_radio & {
+        & + .weui-icon-checked {
+            min-width:16px;
+        }
         &:checked {
             & + .weui-icon-checked {
                 &:before {

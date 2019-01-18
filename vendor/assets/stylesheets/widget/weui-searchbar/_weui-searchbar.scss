@@ -5,6 +5,8 @@
     display: flex;
     box-sizing: border-box;
     background-color: #EFEFF4;
+    -webkit-text-size-adjust: 100%;
+    align-items: center;
     &:before {
         @include setTopLine(#D7D6DC);
     }
