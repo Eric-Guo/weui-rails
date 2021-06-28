@@ -16,6 +16,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.version       = Weui::Rails::VERSION
 
-  gem.add_runtime_dependency 'sass', '>= 3.3.4'
+  gem.add_runtime_dependency 'sass', '>= 3.4.25'
   gem.add_runtime_dependency 'autoprefixer-rails', '>= 5.2.1'
 end
